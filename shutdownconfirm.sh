@@ -1,0 +1,15 @@
+#!/bin/bash
+echo -n "Biztosan le akarod kapcsolni? Valakinek oda kell mennie és megnyomni a gombot! y/n "
+read reply
+
+if [ "$reply" = y -o "$reply" = Y ]
+then
+  $1 ${@:2}
+else
+  $1 -c
+  echo "shutdown elhalasztva!"
+fi
+
+# Make the following aliases:
+# alias sudo="sudo "
+# alias shutdown="/home/user1/shutdownconfirm.sh /usr/sbin/shutdown"
