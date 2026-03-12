@@ -9,7 +9,3 @@ else
   $1 -c
   echo "shutdown elhalasztva!"
 fi
-
-# Make the following aliases:
-# alias sudo="sudo "
-# alias shutdown="/home/user1/shutdownconfirm.sh /usr/sbin/shutdown"
