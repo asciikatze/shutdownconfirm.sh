@@ -1,8 +1,11 @@
-i have remote access to a server whitout active power management and when i want to shut down the server someone needs to push a button to shut it down completely... i keep shutting it down remotely whitout realizing this.
-this is my solution; a bash script asks me if i really want to shut the server down and reminds me that someone needs to push a button too.
+i have remote access to a server whitout active power management and when i want to shut down the server someone needs to push a button to shut it down completely... i keep shutting it down whitout realizing this.
+this is my solution; a bash script asks me if i really want to shut the server down and reminds me that i need to let someone know to push the power button.
 
-+--------------------------------------------------------------------+
-| use the following aliases:                                         |
-| alias sudo="sudo "                                                 |
-| alias shutdown="/home/user1/shutdownconfirm.sh /usr/sbin/shutdown" |
-+--------------------------------------------------------------------+
++-----------------------------------------------------------------------+
+| file: /usr/local/bin/shutdownconfirm.sh - with permissions 744        |
+| set the following aliases:                                            |
+| alias sudo="sudo "                                                    |
+| alias shutdown="/usr/local/bin/shutdownconfirm.sh /usr/sbin/shutdown" |
++-----------------------------------------------------------------------+
+
+tested on debian 12
