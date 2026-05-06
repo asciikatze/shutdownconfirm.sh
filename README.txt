@@ -8,4 +8,6 @@ this is my solution; a bash script asks me if i really want to shut the server d
 | alias shutdown="/usr/local/bin/shutdownconfirm.sh /usr/sbin/shutdown" |
 +-----------------------------------------------------------------------+
 
-tested on debian 12
+it is a really good idea to use something like this on your hypervisor.. dont ask how i got to this conclusion.
+
+tested on debian 12 and ubuntu 24.04.4
